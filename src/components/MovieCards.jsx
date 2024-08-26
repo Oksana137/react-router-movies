@@ -34,7 +34,7 @@ const MovieCards = () => {
   }, []);
 
   return (
-    <div className="flex justify-center flex-wrap gap-8">
+    <div className="p-8 flex justify-center flex-wrap gap-8">
       {movies &&
         movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
     </div>

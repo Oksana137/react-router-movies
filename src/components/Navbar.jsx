@@ -7,12 +7,6 @@ const Navbar = () => {
         <button class="btn btn-ghost text-xl">Movies</button>
       </Link>
     </div>
-
-    // <div className="navbar bg-base-100">
-    //   <Link to="/">
-    //     <a className="btn btn-ghost text-xl">Movies</a>
-    //   </Link>
-    // </div>
   );
 };
 

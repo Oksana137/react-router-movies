@@ -15,9 +15,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <div className="p-8">
-        <Outlet />
-      </div>
+      <Outlet />
     </>
   );
 };
