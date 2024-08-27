@@ -7,6 +7,7 @@ const MovieCards = () => {
 
   useEffect(() => {
     const controller = new AbortController();
+    options.signal = controller.signal;
 
     const fetchMovies = async () => {
       try {

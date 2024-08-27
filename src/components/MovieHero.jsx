@@ -8,6 +8,7 @@ const MovieHero = () => {
 
   useEffect(() => {
     const controller = new AbortController();
+    options.signal = controller.signal;
 
     const fetchMovieById = async () => {
       try {
