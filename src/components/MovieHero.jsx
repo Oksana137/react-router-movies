@@ -22,16 +22,15 @@ const MovieHero = () => {
 
         const data = await response.json();
         setMovie(data);
-        
-        return () => {
-          controller.abort();
-        };
       } catch (error) {
         console.error("Error fetching", error);
       }
     };
 
     fetchMovieById();
+    return () => {
+      controller.abort();
+    };
   }, [id]);
 
   return (
